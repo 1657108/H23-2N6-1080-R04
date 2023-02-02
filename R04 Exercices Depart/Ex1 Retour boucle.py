@@ -15,27 +15,6 @@ os.chdir(os.path.dirname(__file__))   # Elles permettent de se positionner dans 
 # Si vous êtes fort en programmation, faites le code maintenant
 # Si vous avez besoin de plus d'explications, vous pourrez les trouver plus bas dans cet exercice
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # EXPLICATIONS SUPPLÉMENTAIRES
 # Créez des variables:
 #           pour additionner le dernier nb de likes de chaque vidéo (total_likes) et initialisez-la à 0
@@ -52,3 +31,15 @@ os.chdir(os.path.dirname(__file__))   # Elles permettent de se positionner dans 
 # Après la boucle, imprimez le résultat demandé dans le terminal 
 
 
+total_likes = 0
+nb_video = 0
+diviseur = 0
+
+with open("Ex1_youtub_Nb_Likes.txt","r") as file:
+    lecteur_txt = file.readlines()   #créer un objet de la classe "reader"
+    for ligne in lecteur_txt : # pour chaque ligne dans notre "lecteur" (donc dans notre fichier)
+        ligne_split = ligne.split("|")
+        total_likes = int(range(-1, len(ligne)))
+
+  
+    
